@@ -15,9 +15,7 @@ function Navbar() {
         <button className={style.itemButton} onClick={showcartbutton} >
           Cart
         </button>
-        <button className={style.itemButton} onClick={handlerefresh} >
-          Reset
-        </button>
+    
       </div>
     </div>
   );
