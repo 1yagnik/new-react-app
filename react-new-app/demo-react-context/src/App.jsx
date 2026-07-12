@@ -1,8 +1,33 @@
 import { useState } from 'react'
 import './App.css'
-import ParentComponent from './Components/parent.component'
+
+import Items from './components/Items';
+import Navbar from './components/Navbar';
+//import ParentComponent from './Components/parent.component'
+import CustomContext ,{ ItemContext } from "./context";
+import CartModal from './components/cartModel';
+
+
 
 function App() {
+//  const [total, setTotal] = useState(0);
+ // const [item, setItem] = useState(0);
+  return (
+   <CustomContext>
+        <div className='App'>
+          <h2>Shopping Cart</h2>
+            <Navbar />
+            <Items />
+        </div>
+    </CustomContext>
+    
+       
+  );
+}
+export default App;
+
+
+/*function App() {
   
 
   return (
@@ -13,4 +38,4 @@ function App() {
   )
 }
 
-export default App
+export default App*/
